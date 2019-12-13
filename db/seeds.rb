@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+open("#{Rails.root}/db/data.json") do |user_data|
+  JSON.parse(user_data.read).each do |user|
+    User.create(user)
+  end
+end

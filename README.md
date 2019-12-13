@@ -1,24 +1,34 @@
-# README
+# Rails with React Test
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# How to run this project
 
-Things you may want to cover:
+Clone this repository.
 
-* Ruby version
+```console
+$ git clone git@github.com:sobanakram/app-llc-rails-test.git
+$ cd app-llc-rails-test
+```
+make sure you have Ruby version 2.6.5 installed also yarn
 
-* System dependencies
+Install gem dependencies
+```console
+$ bundle install
+```
 
-* Configuration
+Install javascript dependencies
+```console
+$ yarn install
+```
 
-* Database creation
+Create, migrate, seed database
+```console
+$ rails db:create db:migrate db:seed
+```
 
-* Database initialization
+Run rails server
+```console
+$ rails s
+```
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Open browser
+- [`http://localhost:3000/`](http://localhost:3000/)

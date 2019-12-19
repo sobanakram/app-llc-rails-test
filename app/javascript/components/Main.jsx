@@ -12,18 +12,3 @@ class Main extends React.Component {
 }
 
 export default Main
-
-// Hello.defaultProps = {
-//   name: 'David'
-// }
-//
-// Hello.propTypes = {
-//   name: PropTypes.string
-// }
-//
-// document.addEventListener('DOMContentLoaded', () => {
-//   ReactDOM.render(
-//     <Hello name="React" />,
-//     document.body.appendChild(document.createElement('div')),
-//   )
-// })

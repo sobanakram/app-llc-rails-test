@@ -1,8 +1,10 @@
 module Api
-  class UsersController < ApplicationController
+  class UsersController < ApiController
     def index
-      users = User.all
-      render json: users, adapter: :json
+      pagy, users = pagy(User, items: 5)
+
+      render json: users, meta: pagy_metadata(pagy), adapter: :json
+      #render json: User.all, adapter: :json
     end
   end
 end
